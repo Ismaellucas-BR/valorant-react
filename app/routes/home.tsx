@@ -1,5 +1,8 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import HeroSection from "~/components/home/HeroSection";
+import LastetsNews from "~/components/home/LastetsNews";
+import Season2025 from "~/components/home/Season2025";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +12,11 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <HeroSection />
+      <LastetsNews />
+      <Season2025 />
+    </>
+  );
 }

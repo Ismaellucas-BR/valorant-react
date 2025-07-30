@@ -25,14 +25,21 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html data-theme="light" lang="pt-BR">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script defer>
+          document.documentElement.classList.toggle( "dark", localStorage.theme
+          === "dark" || (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches), );
+          localStorage.theme = "light"; localStorage.theme = "dark";
+          localStorage.removeItem("theme");
+        </script>
       </head>
-      <body>
+      <body className="flex flex-col items-center">
         {children}
         <ScrollRestoration />
         <Scripts />
