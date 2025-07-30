@@ -3,6 +3,7 @@ import { Welcome } from "../welcome/welcome";
 import HeroSection from "~/components/home/HeroSection";
 import LastetsNews from "~/components/home/LastetsNews";
 import Season2025 from "~/components/home/Season2025";
+import WeAreValorant from "~/components/home/WeAreValorant";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -17,6 +18,7 @@ export default function Home() {
       <HeroSection />
       <LastetsNews />
       <Season2025 />
+      <WeAreValorant />
     </>
   );
 }

@@ -1,3 +1,5 @@
+import ButtonFullWidth from "../buttonFullWidth";
+
 export default function Season2025() {
   return (
     <section
@@ -14,9 +16,11 @@ export default function Season2025() {
           Enfrente a beleza rústica do Corrode. Novo terreno, a energia de
           sempre.
         </p>
-        <button className="uppercase p-5 bg-light-red w-full font-inter font-semibold text-base">
-          Assista agora
-        </button>
+        <ButtonFullWidth
+          color="bg-light-red"
+          link="#"
+          content="Assista agora"
+        />
       </div>
     </section>
   );
