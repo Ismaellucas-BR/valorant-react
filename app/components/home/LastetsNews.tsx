@@ -1,4 +1,5 @@
 import { SquareArrowOutUpRight } from "lucide-react";
+import CardBlog from "../CardBlog";
 export default function LastetsNews() {
   return (
     <section className="flex flex-col items-center w-[90%]">
@@ -14,6 +15,9 @@ export default function LastetsNews() {
           </span>
           <SquareArrowOutUpRight className="stroke-light-red " size={20} />
         </div>
+      </div>
+      <div className="flex flex-col gap-5">
+        <CardBlog />
       </div>
     </section>
   );

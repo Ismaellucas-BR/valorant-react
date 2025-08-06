@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section>
+    <section className="w-full">
       <div className="relative ">
         <video
           data-testid="backdrop-background"
